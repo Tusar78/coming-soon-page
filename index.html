@@ -1,21 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Meta Info -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Meta Info -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Attach style file -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Attach style file -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- Page Title -->
-  <title>Coming Soon Page</title>
-</head>
-<body>
-  
+    <!-- Page Title -->
+    <title>Coming Soon Page</title>
+  </head>
+  <body>
+    <!-- Main Section -->
+    <main class="main">
+      <section class="coming-soon-container">
+        <div class="coming-soon__logo">
+          <img
+            src="./assets/images/logo.svg"
+            alt="Website Logo"
+            class="logo__img"
+          />
+        </div>
 
-  <!-- Attach script file -->
-  <script src="./assets/js/app.js"></script>
-</body>
+        <div class="coming-soon__img">
+          <picture>
+            <source media="(min-width:650px)" srcset="./assets/images/hero-desktop.jpg">
+            <img src="./assets/images/hero-mobile.jpg" alt="Hero img mobile" style="width:auto;">
+          </picture>
+        </div>
+
+        <div class="coming-soon__body">
+          <div class="coming-soon__heading">
+            <h5 class="coming-soon__subtitle">WE'RE</h5>
+            <h2 class="coming-soon__title">COMING <br /> SOON</h2>
+          </div>
+          <div class="coming-soon__description">
+            <p class="coming-soon__text">
+              Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+            </p>
+          </div>
+          <div class="coming-soon__email">
+            <form>
+              <input type="email" name="email" id="email" class="coming-soon__input"> 
+              <button class="coming-soon__btn" type="submit">
+                <img class="coming-soon__btn-icon" src="./assets/images/icon-arrow.svg" alt="Button icon">
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Attach script file -->
+    <script src="./assets/js/app.js"></script>
+  </body>
 </html>
