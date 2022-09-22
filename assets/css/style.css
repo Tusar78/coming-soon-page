@@ -187,19 +187,24 @@ button {
 @media screen and (min-width: 991.98px) {
   .coming-soon__body {
     text-align: left;
-  }
-  
-  .coming-soon__description {
-    width: 45%;
+    width: 50%;
   }
 
   .coming-soon__email {
-    width: 45%;
+    width: 100%;
   }
 
   .coming-soon__img {
     position: absolute;
     top: 0;
     right: 0;
+  }
+
+  .coming-soon__img {
+    width: 50%;
+  }
+
+  .coming-soon__img-mobile {
+    height: 100vh;
   }
 }
