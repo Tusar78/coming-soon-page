@@ -1,16 +1,15 @@
 /* Added google fonts from fonts.google.com */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
 
 /* Important variable */
 :root {
   /* Fonts and typography */
-  --body-font: 'Josefin Sans', sans-serif;  
+  --body-font: "Josefin Sans", sans-serif;
   --normal-size: 1rem;
   --font-light: 300;
   --font-regular: 400;
   --font-bold: 600;
 
-  
   /* Primary Color */
   --desaturated-red: hsl(0, 36%, 70%);
   --soft-red: hsl(0, 93%, 68%);
@@ -21,4 +20,39 @@
   /* Gradient Colors */
   --gradient-light: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
   --gradient-medium: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+}
+
+/* Reset Code */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-size);
+}
+
+h2,
+h5 {
+  font-weight: var(--font-regular);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  font-family: var(--body-font);
+  font-size: var(--normal-size);
 }
